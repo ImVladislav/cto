@@ -38,7 +38,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 150vh;
+  /* height: 150vh; */
   position: relative;
 }
 
@@ -78,13 +78,8 @@ body {
   right: 5%;
 }
 
-.second-layer {
-  background-image: url("images/bg-bottom.png");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* height: 125vh; */
-}
+
+
 
 .ca-part {
   /* padding-top: 25%; */
@@ -118,7 +113,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #669100;
+  /* background-color: #669100; */
+  /* background-image: url("images/bg-bottom.png"); */
 }
 
 .narrative-box {
@@ -171,7 +167,7 @@ body {
 }
 
 .roadmap-sec {
-  margin-top: 8%;
+  /* margin-top: 8%; */
 }
 
 .rwug-show {
@@ -211,10 +207,7 @@ body {
     margin-top: 15%;
   }
 
-  .second-layer {
-    background-size: cover;
-    height: 50vh;
-  }
+
 
   .telegram {
     width: 70px;
@@ -298,4 +291,75 @@ body {
     font-size: 3rem;
     letter-spacing: 4px;
   }
+}
+
+
+/* game */
+
+.second-layer {
+  display: grid;
+  place-content: center;
+  height: 50vh;
+  font-size: 80px;
+  background: #333;
+  overflow-y: hidden;
+  min-width: 300px;
+  min-height: 400px;
+  user-select: none;
+}
+.second-layer #player span {
+  cursor: pointer;
+  transition: all 0.5s;
+  opacity: 1;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  bottom: 0;
+}
+
+.second-layer #player span.chosen {
+  bottom: 25px;
+}
+
+.second-layer #player span.hidden {
+  opacity: 0;
+  width: 0;
+}
+
+.second-layer.noclick #player span {
+  cursor: default;
+}
+
+.second-layer #pc {
+  /* position: absolute; */
+  top: 0px;
+  /* left: calc(50vw - 40px); */
+  transform: rotate(180deg);
+  transition: top 0.5s;
+  position: relative;
+}
+
+.second-layer #pc.hidden {
+  top: -140px;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.second-layer p {
+  position: absolute;
+  width: 100vw;
+  text-align: center;
+  bottom: 70px;
+  margin: 0;
+  color: #fff;
+  transition: bottom 0.5s;
+  opacity: 1;
+  transition: 800ms;
+}
+
+.second-layer p.hidden {
+  /* bottom: -200px; */
+  opacity: 0;
+  transition: 800ms;
 }
