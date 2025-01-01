@@ -1,0 +1,7 @@
+﻿@font-face {
+  font-family: 'Knewave';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/knewave/v14/sykz-yx0lLcxQaSItSo.ttf) format('truetype');
+}
