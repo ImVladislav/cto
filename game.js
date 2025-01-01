@@ -52,3 +52,5 @@ const reset = function () {
 spans.forEach((span) => {
   span.addEventListener('click', clicked);
 });
+
+
