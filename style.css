@@ -44,15 +44,24 @@ body {
 }
 
 .cocial_img {
-  width: 100px; /* Фіксована ширина іконки */
-  height: 100px; /* Фіксована висота іконки */
+  width: 50px; /* Фіксована ширина іконки */
+  height: 50px; /* Фіксована висота іконки */
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ccc; /* Фон для іконки (замініть своїм) */
   border-radius: 50%; /* Кругла форма */
   text-decoration: none; /* Видаляємо підкреслення */
+
 }
+
+@media screen and (min-width: 768px) {
+  .cocial_img {
+    width: 100px; /* Фіксована ширина іконки */
+    height: 100px; /* Фіксована висота іконки */
+  }
+}
+
 
 .banner-section {
   background-color: #8ba900;
@@ -60,15 +69,15 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 80vh;
+  min-height: 100vh;
   position: relative;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .banner-section {
     min-height: 100vh;
   }
-}
+} */
 
 /* @media screen and (min-width: 1024px) {
   .banner-section {
