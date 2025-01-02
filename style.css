@@ -349,11 +349,12 @@ body {
 /* game */
 
 .second-layer {
+  background-image: url(./images/bg-bottom.png);
   display: grid;
   place-content: center;
   height: 50vh;
   font-size: 80px;
-  background: #669100;
+  /* background: #669100; */
   overflow-y: hidden;
   min-width: 300px;
   min-height: 400px;
@@ -855,6 +856,7 @@ section {
     /* letter-spacing: 8px; */
     text-shadow: 4px 7px 0px #915600;
     font-weight: bolder;
+    /* background: linear-gradient(180deg, #8ba900, #658f00); */
 }
 
 @media screen and (min-width: 768px) {
