@@ -38,7 +38,7 @@ body {
   flex-wrap: wrap; /* Дозволяємо елементам переноситися */
   justify-content: center; /* Вирівнюємо по центру в рядку */
   gap: 1rem; /* Відстань між елементами */
-  margin-top: 2%;
+  margin-top: 8%;
   position: relative;
   z-index: 2;
 }
@@ -309,7 +309,7 @@ body {
   }
 
   .ca {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     letter-spacing: 0;
   }
 

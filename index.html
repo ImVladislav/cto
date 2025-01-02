@@ -115,18 +115,32 @@
       </div>
       <!-- second layer -->
   
-      <h2 class="ca" onclick="copyToClipboard()">CA : 5FwRU9A6xPjFrHV58xVCyjSZ7tGXsWqFgJtmKhc4pump</h2>
-
-<script>
-    function copyToClipboard() {
-        const text = document.querySelector('.ca').innerText.replace('CA : ', '');
-        navigator.clipboard.writeText(text).then(() => {
-            alert('Text copied: ' + text);
-        }).catch(err => {
-            console.error('Copying error: ', err);
-        });
-    }
-</script>
+      <h2 class="ca" id="ca" onclick="copyToClipboard()"></h2>
+      <script>
+        function updateCA() {
+            const caElement = document.getElementById('ca');
+            if (window.innerWidth < 768) {
+                caElement.innerHTML = 'CA : 5FwRU9A6xPjFrHV58xVCyj</br>SZ7tGXsWqFgJtmKhc4pump';
+            } else {
+                caElement.innerHTML = 'CA : 5FwRU9A6xPjFrHV58xVCyjSZ7tGXsWqFgJtmKhc4pump';
+            }
+        }
+    
+        function copyToClipboard() {
+            const text = document.getElementById('ca').innerText.replace('CA : ', '');
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Text copied: ' + text);
+            }).catch(err => {
+                console.error('Copy error: ', err);
+            });
+        }
+    
+        // Run on page load
+        updateCA();
+    
+        // Update on window resize
+        window.addEventListener('resize', updateCA);
+    </script>
     </div>
   
     <!-- <div class="follow-part"> -->
