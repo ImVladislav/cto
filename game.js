@@ -1,4 +1,6 @@
 // Отримуємо елементи тільки в межах секції .second-layer
+
+
 const section = document.querySelector('.second-layer');
 const spans = section.querySelectorAll('#player span');
 const pc = section.querySelector('#pc');
