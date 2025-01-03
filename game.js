@@ -1,15 +1,20 @@
 // Отримуємо елементи тільки в межах секції .second-layer
 
-
 const section = document.querySelector('.second-layer');
 const spans = section.querySelectorAll('#player span');
 const pc = section.querySelector('#pc');
 const msg = section.querySelector('p');
 
+const images = {
+  rock: './images/game/1.png',
+  paper: './images/game/2.png',
+  scissor: './images/game/3.png',
+};
+
 const clicked = function (event) {
   if (!section.classList.contains('noclick')) {
     section.classList.add('noclick');
-    const target = event.target;
+    const target = event.target.closest('span');
     target.classList.add('chosen');
     spans.forEach((span) => {
       if (target !== span) {
@@ -17,9 +22,15 @@ const clicked = function (event) {
       }
     });
     const random = Math.floor(Math.random() * 3);
-    pc.textContent = spans[random].textContent;
-    pc.dataset.id = spans[random].id;
+    const pcChoice = spans[random];
+
+    pc.textContent = '';
+    pc.dataset.id = pcChoice.id;
     pc.classList.remove('hidden');
+
+    // Додаємо зображення в span для ПК
+    pc.innerHTML = `<img src="${images[pcChoice.id]}" alt="${pcChoice.id}" class="arms">`;
+
     setTimeout(() => results(target), 250);
   }
 };
@@ -42,10 +53,12 @@ const results = function (target) {
 
 const reset = function () {
   spans.forEach((span) => {
-    span.classList.remove('hidden', 'chosen');
+    span.classList.remove('hidden');
+    span.classList.remove('chosen');
   });
   msg.classList.add('hidden');
   pc.classList.add('hidden');
+  pc.innerHTML = '';
   setTimeout(() => {
     section.classList.remove('noclick');
   }, 500);
@@ -54,5 +67,3 @@ const reset = function () {
 spans.forEach((span) => {
   span.addEventListener('click', clicked);
 });
-
-

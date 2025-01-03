@@ -873,3 +873,18 @@ section {
       letter-spacing: 0;
   }
 }
+
+.arms{
+  width: 90px;
+}
+.moldy_gif{
+  position: absolute;
+  left: 30%;
+  top: 5%;
+  width: 37%;
+
+}
+
+.image_block{
+  position: relative;
+}
