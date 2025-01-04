@@ -360,7 +360,7 @@ body {
   background-image: url(./images/bg-bottom.png);
   display: grid;
   place-content: center;
-  height: 50vh;
+  height: 80vh;
   font-size: 80px;
   /* background: #669100; */
   overflow-y: hidden;
@@ -370,6 +370,9 @@ body {
   position: relative;
   overflow-x: hidden;
   z-index: 3;
+  justify-content: center;
+  justify-items: center;
+  overflow: hidden;
 }
 .second-layer #player span {
   cursor: pointer;
@@ -395,18 +398,19 @@ body {
 }
 
 .second-layer #pc {
-  /* position: absolute; */
+
   top: 0px;
-  /* left: calc(50vw - 40px); */
+
   transform: rotate(180deg);
   transition: top 0.5s;
   position: relative;
   z-index: 2;
+  /* right: 50% !important; */
 }
 
 .second-layer #pc.hidden {
   top: -140px;
-  left: 0;
+  left: 30%;
   opacity: 0;
   transition: 0.5s;
 }
@@ -1026,7 +1030,11 @@ section {
   margin-top: auto; /* Центрування по горизонталі */
   transition: all 0.3s ease-in-out; /* Плавна зміна зображення */
 }
-
+@media screen and (max-width: 768px) {
+  .G_passive {
+    content: url('images/G_passive_tap.png'); /* Змінюємо шлях до картинки */
+  }
+}
 .G_passive:hover {
   content: url("images/G_active.gif"); /* Зміна зображення при ховері */
 }
@@ -1040,7 +1048,7 @@ footer {
   text-align: center;
   color: white;
   background-color: #01bae3;
-  padding: 1rem;
+  /* padding: 1rem; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1058,4 +1066,32 @@ footer {
     0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
   z-index: 10;
   margin: 0 auto;
+}
+
+.game_title {
+  font-size: 0.4em;
+  text-align: center;
+  padding: 20px 0;
+  color: #fde249;
+  /* letter-spacing: 8px; */
+  text-shadow: 4px 7px 0px #915600;
+  font-weight: bolder;
+}
+
+.hidden{
+  opacity: 0;
+}
+
+.game_image{
+width: 4em;
+
+}
+
+@media screen and (min-width: 768px) {
+  .game_title {
+    font-size: 1.5em;
+  }
+  .game_image{
+    width: 7em;
+    }
 }
