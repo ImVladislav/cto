@@ -454,7 +454,7 @@ body {
 }
 
 
-/* 
+
 .footer {
   z-index: 1;
   --footer-background: #669100;
@@ -462,7 +462,7 @@ body {
   position: relative;
   grid-area: footer;
   
-} */
+}
 
 .footer .bubbles {
   position: absolute;
