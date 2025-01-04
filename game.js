@@ -52,10 +52,10 @@ const results = function (target) {
     (target.id === 'scissor' && pc.dataset.id === 'rock')
   ) {
     msg.textContent = 'You lost';
-    mainImage.src = images.sad; // Зображення для програшу
+    mainImage.src = images.happy; // Зображення для програшу
   } else {
     msg.textContent = 'You Win';
-    mainImage.src = images.happy; // Зображення для перемоги
+    mainImage.src = images.sad; // Зображення для перемоги
   }
   msg.classList.remove('hidden');
   setTimeout(reset, 1500);
