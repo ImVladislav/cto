@@ -1001,12 +1001,17 @@ section {
 .money_block{
   background-image: url(./images/G_back.gif);
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   min-height: 100vh;
-  position: relative;
+
   display: flex;
   flex-direction: column;
+
+  position: relative;
+  justify-content: center; /* Центрує вміст по горизонталі */
+  align-items: center; /* Центрує вміст по вертикалі */
+  overflow: hidden;
 }
 
 .perehod-bottom{
