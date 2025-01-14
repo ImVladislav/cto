@@ -360,7 +360,7 @@ body {
   background-image: url(./images/bg-bottom.png);
   display: grid;
   place-content: center;
-  height: 80vh;
+  height: 90vh;
   font-size: 80px;
   /* background: #669100; */
   overflow-y: hidden;
