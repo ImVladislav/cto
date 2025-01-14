@@ -69,7 +69,7 @@
 
     <section class="banner-section">
       <!-- header -->
-      <!-- <header>
+      <header>
 
                 <nav class="navbar container navbar-expand-lg navbar-light">
                     <div class="container-fluid comic-neue-bold">
@@ -86,7 +86,7 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a style="color: #f3d948;" class="nav-link btn  me-2" href="buylink">BUY MOLDY</a>
+                                    <a style="color: #f3d948;" class="nav-link btn  me-2" href="#Play with Moldy">Play with Moldy</a>
                                 </li>
                                 <li class="nav-item">
                                     <a style="color: #f3d948;" class="nav-link btn me-2" href="#MOLDY_STORY">MOLDY STORY</a>
@@ -99,7 +99,7 @@
                     </div>
                 </nav>
 
-            </header> -->
+            </header>
 
       <div class="banner-contents text-center">
         <h1 class="title">$MOLDY</h1>
@@ -114,7 +114,699 @@
                 <img class="rocket-right" src="./images/rocket-2.png" alt=""> -->
       </div>
       <!-- second layer -->
+  
+      <h2 class="ca" id="ca" onclick="copyToClipboard()"></h2>
+      <script>
+        function updateCA() {
+            const caElement = document.getElementById('ca');
+            if (window.innerWidth < 768) {
+                caElement.innerHTML = 'CA : 14piu8FfezYEN6XfxAbUtqYbophSVJeU41zs3wFapump';
+            } else {
+                caElement.innerHTML = 'CA : 14piu8FfezYEN6XfxAbUtqYbophSVJeU41zs3wFapump';
+            }
+        }
+    
+        function copyToClipboard() {
+            const text = document.getElementById('ca').innerText.replace('CA : ', '');
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Text copied: ' + text);
+            }).catch(err => {
+                console.error('Copy error: ', err);
+            });
+        }
+    
+        // Run on page load
+        updateCA();
+    
+        // Update on window resize
+        window.addEventListener('resize', updateCA);
+    </script>
+    </div>
+  
+    <!-- <div class="follow-part"> -->
+      <div class="socials_banner">
+       
+          <!-- <div class="socials_banner"> -->
+            <div class="coin-wrap">
+          <a href="t.me/MoldedByClay" target="_blank">
+            <div class="coin">
+              <div class="coin__front-backface"></div>
+              <div class="coin__back-backface"></div>
+              <div class="coin__front">
+                <img class="cocial_img" src="images/tg.svg" alt="">
+              </div>
+              <div class="coin__back">
+                <img class="cocial_img" src="images/tg.svg" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+          <div class="coin-wrap">
+            <a href="https://x.com/MoldedByClay" target="_blank">
+              <div class="coin">
+                <div class="coin__front-backface"></div>
+                <div class="coin__back-backface"></div>
+                <div class="coin__front">
+                  <img class="cocial_img" src="images/tt.svg" alt="">
+                </div>
+                <div class="coin__back">
+                  <img class="cocial_img" src="images/tt.svg" alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="coin-wrap">
+            <a href="https://dexscreener.com/solana/4p8v38196ny8d2c7u5ljwbxfs4csqjixpcxex7gawgmc" target="_blank">
+              <div class="coin">
+                <div class="coin__front-backface"></div>
+                <div class="coin__back-backface"></div>
+                <div class="coin__front">
+                  <img class="cocial_img" src="images/dexs.svg" alt="">
+                </div>
+                <div class="coin__back">
+                  <img class="cocial_img" src="images/dexs.svg" alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="coin-wrap">
+            <a href="https://www.dextools.io/app/en/solana/pair-explorer/BHjzsAcraZbes4XKzKHyf1xmZoVMA8Eu85EGnXk3ZLdN?t=1731949318591" target="_blank">
+              <div class="coin">
+                <div class="coin__front-backface"></div>
+                <div class="coin__back-backface"></div>
+                <div class="coin__front">
+                  <img class="cocial_img" src="images/dextt.png" alt="">
+                </div>
+                <div class="coin__back">
+                  <!-- <img class="cocial_img" src="images/dextt.png" alt=""> -->
+                  <p style="position: absolute; font-size: 80%;">soon</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        <!-- <a href="t.me/MoldedByClay" target="_blank"><img class="cocial_img" src="images/tg.svg" alt=""></a> -->
+        <!-- <a href="https://x.com/MoldedByClay" target="_blank"><img class="cocial_img" src="images/tt.svg" alt=""></a> -->
+        <!-- <a target="_blank" href="https://dexscreener.com/solana/4p8v38196ny8d2c7u5ljwbxfs4csqjixpcxex7gawgmc"><img class="cocial_img" src="images/dexs.svg" alt=""></a> -->
+        <!-- <a target="_blank" href="https://www.dextools.io/app/en/solana/pair-explorer/BHjzsAcraZbes4XKzKHyf1xmZoVMA8Eu85EGnXk3ZLdN?t=1731949318591"><img class="cocial_img" src="images/dextt.png" alt=""></a> -->
+      </div>
+    <!-- </div> -->
+    <!-- <section class="narrative-section"> -->
 
+
+    <!-- </section> -->
+  </section>
+  
+  <section class="perehod">
+  
+      <div class="main">
+          <div class="footer">
+              <div class="bubbles">
+                  <!-- Генерація бульбашок -->
+                  <script>
+                      for (let i = 0; i < 128; i++) {
+                          const bubble = document.createElement('div');
+                          bubble.className = 'bubble';
+                          bubble.style.cssText = `--size:${2 + Math.random() * 2}rem; --distance:${6 + Math.random() * 4}rem; --position:${-5 + Math.random() * 110}%; --time:${2 + Math.random() * 2}s; --delay:${-1 * (2 + Math.random() * 2)}s;`;
+                          document.querySelector('.bubbles').appendChild(bubble);
+                      }
+                  </script>
+              </div>
+          </div>
+      </div>
+      <svg style="position:fixed; top:1vh">
+          <defs>
+              <filter id="blob">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob" />
+              </filter>
+          </defs>
+      </svg>
+  
+  </section>
+
+
+  <section class="second-layer">
+    <h2 id="Play with Moldy" class="game_title">Play with Moldy</h2>
+    <img class="game_image" src="images/game/normal.png" alt="normal" />
+    <span id="pc" class="hidden"><img class="arms" src="./images/game/1.png" alt="rock"/></span>
+    <div id="player">
+      <!-- <span id="rock"><img class="arms" src="./images/game/1.png" alt="rock"/></span>
+      <span id="paper"><img class="arms" src="./images/game/2.png" alt="paper"/></span>
+      <span id="scissor"><img class="arms" src="./images/game/3.png" alt="scissor"/></span> -->
+      <span id="rock">✊</span>
+      <span id="paper">🤚</span>
+      <span id="scissor">✌️</span>
+    </div>
+    <p class="hidden">You Win!</p>
+  </section>
+
+
+
+    
+    <section class="roadmap-sec">
+      <!-- <h1 class="narrative-title knewave-regular-bold"> -->
+        <!-- <img class="story-text" src="images/rwug_story.png" alt=""> -->
+        <h1 id="MOLDY_STORY" class="sub_title" style="background: linear-gradient(180deg, #8ba900, #658f00);">$MOLDY STORY</h1>
+      <!-- </h1> -->
+      <div class="narra-div">
+        <div class="content">
+          <p class="narrative-para comic-neue-bold">
+            Imagine an ordinary lump of clay in a quiet workshop. Then, amidst the turbulence of the crypto market, the clay suddenly came alive! That’s when MOLDY — a character sculpted by a passionate community — took form. He embodies creativity, bravery, and a love for boundary-pushing experiments on the blockchain.
+            <!-- <br>
+            <br>
+            MOLDY symbolizes the limitless potential of a decentralized
+            community. Much like MOLDY himself, the memecoin is versatile,
+            unbound by tradition, and powered by the collective imagination
+            of its supporters. With MOLDY as your guide, you’re not just
+            holding a token—you possess a protective power and a gateway to
+            shaping your financial destiny.
+          </p> -->
+        </div>
+      </div>
+      <!-- <figure> -->
+
+      <!-- </figure> -->
+    </section>
+    
+
+    <section class="roadmap-sec">
+      <!-- <h1 class="narrative-title knewave-regular-bold"> -->
+        <!-- <img class="story-text" src="images/rwug_story.png" alt=""> -->
+        <h1 id="MOLDY_STORY" class="sub_title" style="background: linear-gradient(180deg, #628c00, #658f00);">CHAT WITH $MOLDY</h1>
+      <!-- </h1> -->
+      <div class="narra-div">
+        <div class="content">
+          <div class="grid grid-cols-2 WE_ARE_DUSTY">
+            <div class="box_1 space-y-4">
+                      <!-- <h1 class="animate__bounceInDown wow animate__animated">
+                        CHAT WITH WOOL AI
+                      </h1> -->
+      <div class="chat-container">
+        <div id="chat-container"
+          style="padding: 10px; height: 800px; display: flex; flex-direction: column;">
+          <div id="chat-history" style="color: #fff; flex: 1; overflow-y: auto; margin-bottom: 10px;"></div>
+          <div class="button_block">
+            <input type="text" id="user-input" placeholder="Enter your message..."
+              style="flex: 1; padding: 10px; color: #fff;">
+            <button id="send-button"
+              class=".btn_send">Send</button>
+          </div>
+        </div>
+        <style>
+
+
+          .button_block {
+            display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    /* align-items: center; */
+
+
+
+
+
+          }
+          #chat-container {
+            /* border: 1px solid #157e05; */
+            /* border-radius: 10px; */
+            padding: 10px;
+            /* background-color: white; */
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+          }
+          
+          #chat-history {
+            color: #fff;
+            flex: 1;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+          }
+      
+          /* Стилі для скролбару */
+          #chat-history::-webkit-scrollbar {
+            width: 10px;
+            font-family: "Comic Neue", cursive;
+            width: 89%;
+            /* Ширина вертикального скролбару */
+            background-color: #f1f1f1;
+            /* Колір фону скролбару */
+            border-radius: 10px;
+            /* Заокруглені краї скролбару */
+          }
+      
+          /* Стиль для повзунка (thumb) */
+          #chat-history::-webkit-scrollbar-thumb {
+            background-color: #157e05;
+            /* Колір повзунка */
+            border-radius: 10px;
+            /* Заокруглені краї повзунка */
+            border: 2px solid #fff;
+            /* Білий контур навколо повзунка */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            /* Тінь для більшого ефекту */
+          }
+      
+          /* Стиль для повзунка при наведенні */
+      
+      
+          /* Стиль для фону скролбару (track) */
+          #chat-history::-webkit-scrollbar-track {
+            background: #fddc11;
+            /* Легкий сірий фон */
+            border-radius: 10px;
+            /* Заокруглені краї фону */
+          }
+      
+      
+          .user-message {
+            text-align: right;
+            margin: 5px 0;
+            display: inline-block;
+            background-color: #9c2222;
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
+            max-width: 70%;
+            position: relative;
+            /* border: 1px solid #157e05; */
+            align-self: flex-end;
+            opacity: 0;
+            animation: fadeIn 0.5s forwards;
+            font-family: coconutz;
+          }
+      
+          .bot-message {
+            text-align: left;
+            margin: 5px 0;
+            display: inline-block;
+            background-color: #fddc11;
+            color: black;
+            padding: 10px;
+            border-radius: 15px;
+            max-width: 70%;
+            position: relative;
+            border: 1px solid #2a2a2a;
+            align-self: flex-start;
+            opacity: 0;
+            animation: fadeIn 0.5s forwards;
+            font-family: coconutz;
+          }
+      
+          .bot-avatar {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-image: url('100x100.png');
+            /* Замените на URL вашей аватарки */
+            background-size: cover;
+            vertical-align: middle;
+          }
+      
+
+
+
+          #user-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #157e05;
+            border-radius: 5px;
+            background-color: #e8f7f7;
+            color: #2a2a2a !important;
+            font-family: "Knewave", system-ui;
+            width: 100%;
+            font-family: "Comic Neue", cursive;
+  font-weight: 800;
+  font-style: normal;
+          }
+      
+          #send-button {
+            font-family: "Comic Neue", cursive;
+  font-weight: 800;
+  font-style: normal;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #157e05;
+            color: #fff;
+            cursor: pointer;
+            font-family: "Knewave", system-ui;
+          
+              margin-left: 10px;
+      /* margin-top: 0px; */
+       
+      margin-left: 0px;
+      margin-top: 10px;
+      
+      }
+
+      @media screen and (min-width: 768px){
+  .button_block {
+            display: flex;
+    flex-direction: row;
+    /* align-content: center; */
+    align-items: center;
+
+          }
+
+          #send-button{
+         margin-left: 10px;
+          margin-top: 0px;
+      }
+}
+
+      /* @media screen and (max-width: 720px) {
+      
+      
+      #send-button{
+         margin-left: 0px;
+          margin-top: 10px;
+      }
+      } */
+      
+          #send-button:hover {
+            background-color: #157e05;
+          }
+      
+          #chat-container::-webkit-scrollbar {
+            width: 8px;
+          }
+      
+          #chat-container::-webkit-scrollbar-thumb {
+            background: #157e05;
+            border-radius: 10px;
+          }
+      
+          #chat-container::-webkit-scrollbar-track {
+            background: #2a2a2a;
+          }
+      
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+      
+            to {
+              opacity: 1;
+            }
+          }
+        </style>
+        <script>
+          const chatHistory = JSON.parse(sessionStorage.getItem('chatHistory')) || [];
+      
+          function updateChatHistory() {
+            const chatHistoryDiv = document.getElementById('chat-history');
+            chatHistoryDiv.innerHTML = chatHistory.map(msg => msg).join('');
+            chatHistoryDiv.scrollTop = chatHistoryDiv.scrollHeight;
+          }
+      
+          function addMessageToChat(message, isUser) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = isUser ? 'user-message' : 'bot-message';
+            if (!isUser) {
+              messageDiv.innerHTML = `<div class="bot-avatar"></div> <span>${message}</span>`;
+            } else {
+              messageDiv.innerHTML = `<span>${message}</span>`;
+            }
+      
+            chatHistory.push(messageDiv.outerHTML);
+            updateChatHistory();
+      
+            messageDiv.style.opacity = 0;
+            setTimeout(() => {
+              messageDiv.style.opacity = 1;
+            }, 0);
+          }
+      
+          document.getElementById('send-button').addEventListener('click', sendMessage);
+          document.getElementById('user-input').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+              sendMessage();
+            }
+          });
+      
+          async function sendMessage() {
+            const sendButton = document.getElementById('send-button');
+      
+            if (sendButton.disabled) return
+      
+            const userInput = document.getElementById('user-input').value;
+            if (!userInput) return;
+      
+            addMessageToChat(`you: ${userInput}`, true);
+            sessionStorage.setItem('chatHistory', JSON.stringify(chatHistory));
+            document.getElementById('user-input').value = '';
+      
+            const typingIndicator = document.createElement('div');
+            typingIndicator.className = 'bot-message';
+            typingIndicator.innerHTML = `<div class="bot-avatar"></div> <span> Moldy is typing...</span>`;
+            chatHistory.push(typingIndicator.outerHTML);
+            updateChatHistory();
+      
+            // Блокируем кнопку отправки
+            sendButton.disabled = true;
+            const backendUrl = 'https://moldy-back.onrender.com/chat';
+            // const backendUrl = 'http://localhost:4000/chat';
+            const fetchPromise = fetch(backendUrl, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({ messages: chatHistory.slice(-10) })
+            });
+      
+            // Таймер на 5 секунд
+            const timeoutPromise = new Promise((_, reject) =>
+              setTimeout(() => reject(new Error('Server error')), 5000)
+            );
+      
+            try {
+              const response = await Promise.race([fetchPromise, timeoutPromise]);
+              if (!response.ok) {
+                throw new Error(`Error: ${response.status} ${response.statusText}`);
+              }
+              const data = await response.json();
+              chatHistory.pop();
+              addMessageToChat(`${data.reply}`, false);
+            } catch (error) {
+              chatHistory.pop();
+              addMessageToChat(`Error: ${error.message || 'request error'}`, false);
+            } finally {
+              updateChatHistory();
+              sessionStorage.setItem('chatHistory', JSON.stringify(chatHistory));
+              // Разблокируем кнопку отправки
+              sendButton.disabled = false;
+      
+            }
+          }
+          updateChatHistory();
+        </script>
+        </div>
+      </div>
+    </section>
+      <!-- <figure> -->
+        <div class="image_block">
+        <img class="third-bg" src="images/bg-third.png" alt="">
+        <img class="moldy_gif" src="images/moldy.gif" alt="">
+      </div>
+      <!-- </figure> -->
+
+    <section>
+
+
+    <section>
+      <!-- REEL SECTION -->
+
+      <section>
+        <div>
+          <!-- <h1 class="rwug-show knewave-regular-bold"> -->
+            <!-- <img class="story-text" src="images/rwug_show.png" alt=""> -->
+            <h1 id="MOLDY_SHOW" style="background: linear-gradient(180deg, #008366, #658f00);" class="sub_title">$MOLDY SHOW</h1>
+          <!-- </h1> -->
+        </div>
+
+        <div class="narra-div">
+          <!-- <div class="carousel-container">
+            <div class="carousel-track">
+              <img src="images/logo.png" alt="Image 1">
+              <img src="images/logo2.jpg" alt="Image 2">
+              <img src="images/rwug.png" alt="Image 3">
+              <img src="images/memes/0c018ff56d574ccdb26098b190e2dd01.png.png" alt="Image 4">
+              <img src="images/memes/1bda006f3dc9444c975875ebb7d4e5e1.png.png" alt="Image 5">
+              <img src="images/memes/3f0a840a19204e678ceb288bdcb6a7cd.png.png" alt="Image 4">
+              <img src="images/memes/4aa3b794d8e34fdfb2ddb83bb02497e2.png.png" alt="Image 5">
+
+              <img src="images/memes/6a147450cd6c408f9574691e783c66e7.png.png" alt="Image 1">
+              <img src="images/memes/7c35a641f78944d594c6dff649be93c1.png.png" alt="Image 2">
+              <img src="images/memes/e4e6b18e1552492586591ce8339c2d4d.png.png" alt="Image 3">
+              <img src="images/memes/b4f5aff20821456c8b6604dcce77cf30.png.png" alt="Image 2">
+              <img src="images/memes/8b44c01395924b32acf476d7b5901346.png.png" alt="Image 3">
+            </div>
+          </div> -->
+          <div class="content">
+            <div class="info">
+              <p>
+                
+                MOLDY is more than just a piece of digital modeling clay. It’s a symbol of a new era in crypto—where everyone can collaborate, create, and profit together. Step into our workshop, shape your destiny, and watch as MOLDY evolves right before your eyes!
+                <!-- <span class="movie-night"> -->
+                  <!-- MOLDY</span> the Reality Warping Universal Guardian—a dark grey alien with fathomless pitch-black eyes and the power to take any shape. His presence is a testament to the power of transformation, a beacon for those who dare to dream beyond the confines of the ordinary. MOLDY exists to inspire, protect, and build connections between realms of possibility. -->
+              </p>
+              <!-- <button class="btn">Join</button> -->
+            </div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="images/memes/8b44c01395924b32acf476d7b5901346.png.png" alt="Image 3"
+                    />
+                  <div class="overlay">
+                    <!-- <span>8.5</span> -->
+                    <!-- <h2>The Queen's Gambit</h2> -->
+                  </div>
+                </div>
+    
+                <div class="swiper-slide">
+                  <img
+                    class="img-position"
+                    src="images/memes/b4f5aff20821456c8b6604dcce77cf30.png.png"
+                    alt="" />
+                  <div class="overlay">
+                    <!-- <span>9.5</span> -->
+                    <!-- <h2>Breaking Bad</h2> -->
+                  </div>
+                </div>
+    
+
+    
+
+    
+                <div class="swiper-slide">
+                  <img
+                    src="images/memes/6a147450cd6c408f9574691e783c66e7.png.png"
+                    alt="" />
+                  <div class="overlay">
+                    <!-- <span>8.6</span> -->
+                    <!-- <h2>Anne with an E</h2> -->
+                  </div>
+                </div>
+    
+                <div class="swiper-slide">
+                  <img
+                    src="images/memes/4aa3b794d8e34fdfb2ddb83bb02497e2.png.png"
+                    alt="" />
+                  <div class="overlay">
+                    <!-- <span>8.9</span> -->
+                    <!-- <h2>Friends</h2> -->
+                  </div>
+                </div>
+    
+                <div class="swiper-slide">
+                  <img
+                    class="img-position"
+                    src="images/memes/3f0a840a19204e678ceb288bdcb6a7cd.png.png"
+                    alt="" />
+                  <div class="overlay">
+                    <!-- <span>8.6</span> -->
+                    <!-- <h2>The Crown</h2> -->
+                  </div>
+                </div>
+    
+                <div class="swiper-slide">
+                  <img
+                    src="images/memes/1bda006f3dc9444c975875ebb7d4e5e1.png.png"
+                    alt="" />
+                  <div class="overlay">
+                    <!-- <span>8.7</span> -->
+                    <!-- <h2>House M.D.</h2> -->
+                  </div>
+                </div>
+    
+                <div class="swiper-slide">
+                  <img
+                    src="images/memes/0c018ff56d574ccdb26098b190e2dd01.png.png"
+                    alt="" />
+                  <div class="overlay">
+                    <!-- <span>9.2</span> -->
+                    <!-- <h2>Game of Thrones</h2> -->
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="images/rwug.png"
+                      alt="" />
+                    <div class="overlay">
+                      <!-- <span>9.2</span> -->
+                      <!-- <h2>Game of Thrones</h2> -->
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="images/logo2.jpg"
+                        alt="" />
+                      <div class="overlay">
+                        <!-- <span>9.2</span> -->
+                        <!-- <h2>Game of Thrones</h2> -->
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="images/logo.png"
+                          alt="" />
+                        <div class="overlay">
+                          <!-- <span>9.2</span> -->
+                          <!-- <h2>Game of Thrones</h2> -->
+                        </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+          <!-- <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul> -->
+
+
+        </div>
+      </section>
+    </section>
+    <div class="perehod-bottom">
+    </div>
+    <section class="money_block">
+      <div class="blure"></div>
+      <img src="images/G_passive.png" alt="" class="G_passive">
+      <footer class="footer">
+        <p style="margin: 0;">&copy; 2024 MOLDY CTO. All rights reserved.</p>
+      </footer>
+    </section>
+  </main>
+  <!-- <div class="content"> -->
+<!-- </div> -->
+  <!-- JS FILES -->
+  <script>
+    var swiper = new Swiper('.swiper', {
+        effect: 'cards',
+        grabCursor: true,
+        initialSlide: 2,
+        speed: 500,
+        loop: true,
+        rotate: true,
+        mousewheel: {
+            invert: false,
+        },
+    });
+</script>
+  <script src="npm/bootstrap%405.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script type="module" src="game.js"></script>
 </body>
 
 </html>
