@@ -312,11 +312,17 @@
           </div>
         </div>
         <style>
+
+
           .button_block {
             display: flex;
     flex-direction: column;
     /* align-content: center; */
-    align-items: center;
+    /* align-items: center; */
+
+
+
+
 
           }
           #chat-container {
@@ -341,6 +347,8 @@
           /* Стилі для скролбару */
           #chat-history::-webkit-scrollbar {
             width: 10px;
+            font-family: "Comic Neue", cursive;
+            width: 89%;
             /* Ширина вертикального скролбару */
             background-color: #f1f1f1;
             /* Колір фону скролбару */
@@ -417,6 +425,9 @@
             vertical-align: middle;
           }
       
+
+
+
           #user-input {
             flex: 1;
             padding: 10px;
@@ -424,8 +435,8 @@
             border-radius: 5px;
             background-color: #e8f7f7;
             color: #2a2a2a !important;
-            font-family: coconutz;
-            width: 90%;
+            font-family: "Knewave", system-ui;
+            width: 100%;
           }
       
           #send-button {
@@ -436,7 +447,7 @@
             background-color: #157e05;
             color: #fff;
             cursor: pointer;
-            font-family: coconutz;
+            font-family: "Knewave", system-ui;
           
               margin-left: 10px;
       /* margin-top: 0px; */
@@ -445,7 +456,22 @@
       margin-top: 10px;
       
       }
-      
+
+      @media screen and (min-width: 768px){
+  .button_block {
+            display: flex;
+    flex-direction: row;
+    /* align-content: center; */
+    align-items: center;
+
+          }
+
+          #send-button{
+         margin-left: 10px;
+          margin-top: 0px;
+      }
+}
+
       /* @media screen and (max-width: 720px) {
       
       
